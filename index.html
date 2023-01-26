@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form.freecodecamp.rocks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    <form id="survey-form">
+        <label id="name-label">Name<input class="nextline" type="text" placeholder="Enter your name" id="name" required></label>
+        <label id="email-label">Email<input class="nextline"type="email" placeholder="Enter your email" id="email" required></label>
+        <label id="number-label">Age(optional)<input class="nextline" type="number" placeholder="Age" id="number" min="18" max="80"></label>
+        <label>Which option best describes your current role?<select id="dropdown" class="nextline" >
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select></label>
+        <label id="recommend">Would you recommend freeCodeCamp to a friend?
+            <div class="nextline"><input type="radio" value="opt1" name="recommend">Definitely</div>
+            <div class="nextline"><input  type="radio" value="opt2" name="recommend">Maybe</div>
+            <div class="nextline"><input type="radio" value="opt3" name="recommend">Not sure</div>
+        </label>
+        <label>What is your favorite feature of freeCodeCamp?<select id="dropdown" class="nextline">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+        </select></label>
+        <label>What would you like to see improved? (Check all that apply)
+            <div class="nextline"><input type="checkbox" value="User-side"> Front-end Projects</div>
+            <div class="nextline"><input type="checkbox" value="Server-side"> Back-end Projects</div>
+            <div class="nextline"><input type="checkbox" value="Visuals"> Data Visualization</div>
+            <div class="nextline"><input type="checkbox" value="Challenges"> Challenges</div>
+            <div class="nextline"><input type="checkbox" value="Community"> Open Source Community</div>
+            <div class="nextline"><input type="checkbox" value="Help"> Gitter help rooms</div>
+            <div class="nextline"><input type="checkbox" value="Videos"> Videos</div>
+            <div class="nextline"><input type="checkbox" value="Meetups"> City Meetups</div>
+            <div class="nextline"><input type="checkbox" value="Wiki"> Wiki</div>
+            <div class="nextline"><input type="checkbox" value="Forum"> Forum</div>
+            <div class="nextline"><input type="checkbox" value="Add-ons"> Additional Courses</div>
+        </label>
+        <label>Any comments or suggestions?<textarea placeholder="Enter your comment here..." id="comment"></textarea></label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+    <!-- </div> -->
+</body>
+</html>
